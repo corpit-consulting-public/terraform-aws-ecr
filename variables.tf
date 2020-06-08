@@ -31,12 +31,6 @@ variable "scan_on_push" {
 
 ########Variables for Ecr Repository Policy
 
-variable "repository" {
-  type        = string
-  description = "Name of the repository to apply the policy"
-  default     = ""
-}
-
 variable "policy" {
   description = "The policy document. This is a JSON formatted string. For more information about building IAM policy documents with Terraform"
 }
