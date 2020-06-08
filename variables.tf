@@ -34,6 +34,7 @@ variable "scan_on_push" {
 variable "repository" {
   type        = string
   description = "Name of the repository to apply the policy"
+  default     = ""
 }
 
 variable "policy" {
