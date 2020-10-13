@@ -9,11 +9,11 @@ variable "image_tag_mutability" {
   default     = "MUTABLE"
 }
 
-variable "encryption_configuration" [
+variable "encryption_configuration" {
   type        = map
   descriptiom = "ncryption configuration for the repository"
   default     = {}
-]
+}
 
 variable "image_scanning_configuration" {
   type        = map
