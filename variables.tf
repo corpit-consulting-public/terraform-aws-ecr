@@ -11,7 +11,7 @@ variable "image_tag_mutability" {
 
 variable "encryption_configuration" {
   type        = map
-  descriptiom = "ncryption configuration for the repository"
+  description = "Encryption configuration for the repository"
   default     = {}
 }
 
@@ -34,11 +34,11 @@ variable "encryption_type" {
   default     = "AES256" 
 }
 
-variable "kms_key" [
+variable "kms_key" {
   type        = string
   description = "El ARN de la clave KMS que se usará cuando encryption_typesea KMS. Si no se especifica, utiliza la clave administrada de AWS predeterminada para ECR."
   default     = ""
-]
+}
 
 ### Variable for image_scanning_configuration
 
