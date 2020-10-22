@@ -1,5 +1,5 @@
 
-# tf-aws-dynamodb
+# tf-aws-ecr
 
 Terraform module which creates ERC Repository resources on AWS.
 
